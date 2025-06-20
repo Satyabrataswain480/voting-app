@@ -10,7 +10,6 @@ WORKDIR /usr/local/app
 # have nodemon available for local dev use (file watching)
 RUN npm install -g nodemon
 
-
 COPY package*.json ./
 
 RUN npm ci && \
